@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+.navbar img{
+    width: 70px;
+    height: 70px;
+}
+.bg-light{
+    background-color: #e3a344 !important;
+}
