@@ -41,7 +41,7 @@
                     <i class="fa-solid fa-lock"></i>
                     <input type="password" placeholder="Seu senha..." id="senha" pattern="{8,}">
                 </div>
-                <button><i class="fa-solid fa-check"></i> Logar</button>
+                <button><i class="fa-solid fa-check"></i>Cadastrar</button>
             </div>
             <div class="TelaLogin">
                 <h2>Bem-vindo de volta!</h2>
@@ -54,17 +54,28 @@
                     <i class="fa-solid fa-lock"></i>
                     <input type="password" id="senha" placeholder="Sua senha..." pattern="{8,}">
                 </div>
-                <button><i class="fa-solid fa-check"></i>Cadastrar</button>
+                <button><i class="fa-solid fa-check"></i>Logar</button>
             </div>
             <div class="panels-container">
                 <div class="panel panel-left">
                     <div class="content">
                         <h3>Você já tem uma conta?</h3>
-                        
+                        <p>se caso tenha clique abaixo!</p>
+                        <button class="btn" id="logar">Logar</button>
                     </div>
+                    <img src="./../assets/olg_generation__1_-removebg-preview.png" alt="ogg logo" class="image">
+                </div>
+                <div class="panel panel-right">
+                    <div class="content">
+                        <h3>Você não tem uma conta?</h3>
+                        <p>Crie ela agora mesmo!</p>
+                        <button class="btn" id="cadastrar">Cadastrar</button>
+                    </div>
+                    <img src="./../assets/olg_generation__1_-removebg-preview.png" alt="ogg logo" class="image">
                 </div>
             </div>
         </div>
+        <script src="./../js/app.js"></script>
     </body>
 
     </html>
