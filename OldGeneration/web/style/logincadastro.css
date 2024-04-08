@@ -29,7 +29,6 @@ body{
     width: 100%;
     height: 100%;
     background: linear-gradient(-45deg, rgb(232,199,130),rgb(190,145,42));
-
     z-index: 6;
     transform: translateX(100%);
     transition: 1s ease-in-out;
@@ -66,9 +65,9 @@ h2{
     color: rgb(227,161,64);
 }
 .inputfield{
-    width: 80%;
+    width: 70%;
     height: 35px;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     margin: 10px 0;
     border: 2px solid rgb(247, 214, 142);
     border-radius: 20px;
@@ -83,10 +82,9 @@ h2{
 }
 .inputfield input{
     flex: 5;
-    background-color: none;
     border: none;
     outline: none;
-    width: 85%;
+    width: 65%;
     font-size: 18px;
     font-family: 'Poppins',sans-serif;
     margin-right: 8px;
@@ -103,6 +101,7 @@ button{
     font-family: 'Poppins',sans-serif;
     margin-right: 8px;
     text-align: center;
+    background-color: white;
     color: rgb(227,161,64);
 }
 button i{
@@ -120,6 +119,7 @@ button i{
     justify-content: space-around;
 }
 .panel{
+    z-index: 6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,8 +128,12 @@ button i{
     min-width: 238px;
     padding: 0 10px;
     text-align: center;
-    z-index: 6;
+
 }
+.panel-left{
+    pointer-events: none;
+}
+
 
 .panel .btn{
     width: 150px;
@@ -168,6 +172,7 @@ button i{
     transition-delay: 0.4s;
 }
 
+
 .panel-left .image,
 .panel-left .content{
     transform: translateX(-200%);
@@ -197,3 +202,11 @@ button i{
 .container.cadastrar-mode .TelaLogin{
     opacity: 0;
 }
+
+.container.cadastrar-mode .panel-right{
+    pointer-events: all;
+}
+.container.cadastrar-mode .panel-left{
+    pointer-events: all;
+}
+
